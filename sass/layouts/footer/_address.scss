@@ -1,0 +1,26 @@
+.address {
+  font-style: normal;
+
+  &__text {
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: $white-color;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    font-family: inherit;
+    font-weight: inherit;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color $duration-cubic;
+  }
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}

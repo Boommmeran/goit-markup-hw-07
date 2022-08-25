@@ -1,0 +1,47 @@
+.modal {
+  position: absolute;
+  top: 54%;
+  left: 51%;
+  transform: translate(-54%, -51%) scale(1);
+
+  max-width: 528px;
+  min-height: 581px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  transition: transform $duration-cubic;
+
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @extend %centered-flex;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: $white-color;
+    outline: none;
+
+    transition: fill $duration-cubic;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,36 @@
+.benefits {
+  padding-bottom: 0;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &__container {
+    @extend %centered-flex;
+
+    width: 270px;
+    height: 120px;
+    background-color: $main-bg-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-text-color;
+  }
+
+  &__descr {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

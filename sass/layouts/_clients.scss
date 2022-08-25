@@ -1,0 +1,33 @@
+.clients {
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.logotipes {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+
+  &__link {
+    @extend %centered-flex;
+
+    width: 100%;
+    height: 100%;
+    border: 1px solid $main-icon-color;
+    border-radius: 4px;
+    fill: $main-icon-color;
+
+    transition: fill $duration-cubic, border-color $duration-cubic;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+}
